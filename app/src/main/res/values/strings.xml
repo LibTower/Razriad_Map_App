@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Арт маркет Разряд!</string>
+    <string name="b_authors_text">Авторы</string>
+    <string name="b_map_text">Карта мероприятия</string>
+    <string name="my_image_description">Описание изображения</string>
+
+    <string name="iris">Iris</string>
+    <string name="demi">Demi</string>
+    <string name="brit">BRIT/0.5</string>
+    <string name="kayata">Каята!</string>
+</resources>
