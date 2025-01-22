@@ -12,11 +12,16 @@ class MainActivity : AppCompatActivity() {
 
         val map: Button = findViewById(R.id.map)
         val authors: Button = findViewById(R.id.authors)
+        val whereMap: Button = findViewById(R.id.Where)
+        val fandoms: Button = findViewById(R.id.fandoms)
+        val quest: Button = findViewById(R.id.Quest)
 
 
         map.text = getString(R.string.b_map_text)
         authors.text = getString(R.string.b_authors_text)
-
+        whereMap.text = getString(R.string.Where_us)
+        fandoms.text = getString(R.string.fandoms)
+        quest.text = getString(R.string.quest)
 
 
         authors.setOnClickListener {
@@ -29,6 +34,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        whereMap.setOnClickListener {
+            val intent = Intent(this, Where_map::class.java)
+            startActivity(intent)
+        }
+
+        fandoms.setOnClickListener {
+            val intent = Intent(this, fandoms::class.java)
+            startActivity(intent)
+        }
+
+        quest.setOnClickListener {
+            val intent = Intent(this, quest::class.java)
+        }
     }
 
 }

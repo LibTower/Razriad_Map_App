@@ -1,14 +1,5 @@
 package com.example.razryadapi
 
-data class Author(
-    val nickname: String,
-    val tableNumber: Int,
-    val commission: Boolean,
-    val swap: Boolean,
-    val interactiveQuest: Boolean,
-    val moneyQuest: Boolean
-)
-fun main() {
     val authors = listOf(
         Author("iris", 2, commission = false, swap = true, interactiveQuest = true, moneyQuest = true),
         Author("Demi", 2, commission = false, swap = true, interactiveQuest = false, moneyQuest = true),
@@ -71,5 +62,3 @@ fun main() {
         Author("nyeft", 33, commission = false, swap = false, interactiveQuest = false, moneyQuest = true),
         Author("Киотян", 33, commission = true, swap = true, interactiveQuest = false, moneyQuest = true)
     )
-
-}

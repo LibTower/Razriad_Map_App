@@ -3,6 +3,9 @@
     <string name="b_authors_text">Авторы</string>
     <string name="b_map_text">Карта мероприятия</string>
     <string name="my_image_description">Описание изображения</string>
+    <string name="Where_us">Нажми на меня, если не знаешь как дойти до лофта!</string>
+    <string name="quest">Квест</string>
+    <string name="fandoms">Фандомы</string>
 
     <string name="iris">Iris</string>
     <string name="demi">Demi</string>

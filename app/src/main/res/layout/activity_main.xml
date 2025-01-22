@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/Quest"
         android:layout_width="150dp"
         android:layout_height="68dp"
         android:layout_marginStart="10dp"
@@ -23,7 +23,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fandoms"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/map"
@@ -36,11 +36,11 @@
         android:backgroundTint="@color/gray"
         android:fontFamily="serif"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@+id/Quest"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/authors"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/fandoms"
@@ -54,8 +54,7 @@
         android:fontFamily="serif"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintEnd_toStartOf="@+id/Quest"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:layout_constraintVertical_bias="1.0" />
@@ -73,16 +72,15 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/fandoms"
         app:layout_constraintEnd_toStartOf="@+id/map"
-        app:layout_constraintHorizontal_bias="0.321"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="authors,fandoms,button4,map" />
+        app:constraint_referenced_ids="authors,fandoms,Quest,map" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -99,5 +97,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.23000002"
         app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/Where"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/zero"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="6dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
