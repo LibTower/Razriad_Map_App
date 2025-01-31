@@ -2,50 +2,53 @@ package com.example.razryadapi
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import com.example.razryadapi.Adapter_and_stuff.performClickAnimation
+import com.example.razryadapi.map.Loft_Map
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val map: Button = findViewById(R.id.map)
-        val authors: Button = findViewById(R.id.authors)
-        val whereMap: Button = findViewById(R.id.Where)
-        val fandoms: Button = findViewById(R.id.fandoms)
-        val quest: Button = findViewById(R.id.Quest)
-
-
-        map.text = getString(R.string.b_map_text)
-        authors.text = getString(R.string.b_authors_text)
-        whereMap.text = getString(R.string.Where_us)
-        fandoms.text = getString(R.string.fandoms)
-        quest.text = getString(R.string.quest)
-
+        val authors: ImageButton = findViewById(R.id.authors)
+        val fandoms: ImageButton = findViewById(R.id.fandoms)
+        val map: ImageButton = findViewById(R.id.map)
+        val whereLoft: ImageButton = findViewById(R.id.Where)
+        val quest: ImageButton = findViewById(R.id.go_quest)
 
         authors.setOnClickListener {
-            val intent = Intent(this, go_to_authors::class.java)
-            startActivity(intent)
-        }
-
-        map.setOnClickListener {
-            val intent = Intent(this, go_to_map::class.java)
-            startActivity(intent)
-        }
-
-        whereMap.setOnClickListener {
-            val intent = Intent(this, Where_map::class.java)
-            startActivity(intent)
+            performClickAnimation(it) {
+                val intent = Intent(this, GoToAuthors::class.java)
+                startActivity(intent)
+            }
         }
 
         fandoms.setOnClickListener {
-            val intent = Intent(this, fandoms::class.java)
-            startActivity(intent)
+            performClickAnimation(it) {
+                val intent = Intent(this, GoToFandoms::class.java)
+                startActivity(intent)
+            }
         }
 
+        map.setOnClickListener {
+            performClickAnimation(it) {
+                val intent = Intent(this, Loft_Map::class.java)
+                startActivity(intent)
+            }
+        }
         quest.setOnClickListener {
-            val intent = Intent(this, quest::class.java)
+            performClickAnimation(it) {
+                val intent = Intent(this, Quest::class.java)
+                startActivity(intent)
+            }
+        }
+        whereLoft.setOnClickListener {
+            performClickAnimation(it) {
+                val intent = Intent(this, Where_loft::class.java)
+                startActivity(intent)
+            }
         }
     }
 

@@ -1,8 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id 'kotlin-parcelize'
 
 }
+
 
 android {
     namespace 'com.example.razryadapi'
@@ -34,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation libs.recyclerview
     implementation libs.viewpager2
     implementation libs.androidx.core.ktx
     implementation libs.androidx.appcompat

@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".map.big_room">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/frame2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="312dp"
+        android:layout_height="316dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="278dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/big_room" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562"
+        app:srcCompat="@drawable/big_room_text" />
+
+    <ImageButton
+        android:id="@+id/table14B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table14" />
+
+    <ImageButton
+        android:id="@+id/table11B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table11" />
+
+    <ImageButton
+        android:id="@+id/table12B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table12" />
+
+    <ImageButton
+        android:id="@+id/table13B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table13" />
+
+    <ImageButton
+        android:id="@+id/table15B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="231dp"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table15" />
+
+    <ImageButton
+        android:id="@+id/table23B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="266dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table23" />
+
+    <ImageButton
+        android:id="@+id/table21B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="265dp"
+        android:layout_marginBottom="223dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table21" />
+
+    <ImageButton
+        android:id="@+id/table16B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="233dp"
+        android:layout_marginEnd="265dp"
+        android:layout_marginBottom="48dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table16" />
+
+    <ImageButton
+        android:id="@+id/table17B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="265dp"
+        android:layout_marginBottom="83dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table17" />
+
+    <ImageButton
+        android:id="@+id/table18B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginEnd="265dp"
+        android:layout_marginBottom="118dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table18" />
+
+    <ImageButton
+        android:id="@+id/table19B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="265dp"
+        android:layout_marginBottom="153dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table19" />
+
+    <ImageButton
+        android:id="@+id/table20B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="265dp"
+        android:layout_marginBottom="188dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table20" />
+
+    <ImageButton
+        android:id="@+id/table22B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="231dp"
+        android:layout_marginBottom="266dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table22" />
+
+    <ImageButton
+        android:id="@+id/table24B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="261dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="209dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table24" />
+
+    <ImageButton
+        android:id="@+id/table31B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="202dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table31" />
+
+    <ImageButton
+        android:id="@+id/table30B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="202dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table30" />
+
+    <ImageButton
+        android:id="@+id/table32B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="166dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table32" />
+
+    <ImageButton
+        android:id="@+id/table33B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="131dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table33" />
+
+    <ImageButton
+        android:id="@+id/table26B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="96dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table26" />
+
+    <ImageButton
+        android:id="@+id/table27B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="96dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table27" />
+
+    <ImageButton
+        android:id="@+id/table29B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="167dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table29" />
+
+    <ImageButton
+        android:id="@+id/table28B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="132dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table28" />
+
+    <ImageButton
+        android:id="@+id/table25B"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="261dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="174dp"
+        android:contentDescription="@string/table"
+        android:background="@color/zero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/table25" />
+
+    <ImageView
+        android:id="@+id/moneyQues_back"
+        android:layout_width="144dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="@+id/IneterQuest_back"
+        app:layout_constraintEnd_toEndOf="@+id/swap_back"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/swap_back"
+        app:layout_constraintTop_toTopOf="@+id/IneterQuest_back"
+        app:srcCompat="@drawable/mqquest" />
+
+    <ImageView
+        android:id="@+id/IneterQuest_back"
+        android:layout_width="144dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/comission_back"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/comission_back"
+        app:layout_constraintTop_toBottomOf="@+id/comission_back"
+        app:srcCompat="@drawable/iqquest" />
+
+    <ImageView
+        android:id="@+id/comission_back"
+        android:layout_width="144dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/swap_back"
+        app:layout_constraintEnd_toStartOf="@+id/swap_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/swap_back"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/comission" />
+
+    <ImageView
+        android:id="@+id/swap_back"
+        android:layout_width="144dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/moneyQues_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/comission_back"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/swop" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/comissionB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/swich"
+        app:layout_constraintBottom_toBottomOf="@+id/comission_back"
+        app:layout_constraintEnd_toEndOf="@+id/comission_back"
+        app:layout_constraintStart_toStartOf="@+id/comission_back"
+        app:layout_constraintTop_toTopOf="@+id/comission_back" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/interactiveQuestB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="96dp"
+        android:contentDescription="@string/swich"
+        app:layout_constraintBottom_toBottomOf="@+id/IneterQuest_back"
+        app:layout_constraintEnd_toEndOf="@+id/IneterQuest_back"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/IneterQuest_back"
+        app:layout_constraintTop_toTopOf="@+id/IneterQuest_back"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swapB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="96dp"
+        android:contentDescription="@string/swich"
+        app:layout_constraintBottom_toBottomOf="@+id/swap_back"
+        app:layout_constraintEnd_toEndOf="@+id/swap_back"
+        app:layout_constraintStart_toStartOf="@+id/swap_back"
+        app:layout_constraintTop_toTopOf="@+id/swap_back" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/moneyQuestB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="96dp"
+        android:contentDescription="@string/swich"
+        app:layout_constraintBottom_toBottomOf="@+id/moneyQues_back"
+        app:layout_constraintEnd_toEndOf="@+id/moneyQues_back"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/moneyQues_back"
+        app:layout_constraintTop_toTopOf="@+id/moneyQues_back"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

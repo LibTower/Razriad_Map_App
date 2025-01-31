@@ -1,90 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="409dp"
-    android:layout_height="729dp"
-    android:background="@drawable/background"
-    android:fillViewport="true"
-    tools:layout_editor_absoluteX="283dp"
-    tools:layout_editor_absoluteY="1dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/main"
+    <ImageView
+        android:id="@+id/frameImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/frame2"
+        android:contentDescription="@string/image"/>
+
+    <EditText
+        android:id="@+id/filterEdit"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_gravity="top"
+        android:layout_margin="15dp"
+        android:background="@drawable/serch"
+        android:gravity="center"
+        android:hint="@string/text_editor_authors"
+        android:inputType="text"
+        android:textColorHint="@color/white50"
+        tools:ignore="VisualLintTextFieldSize"/>
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/background"
+        android:layout_marginTop="73dp"
+        android:fillViewport="true"
+        android:layout_gravity="top">
 
-        tools:context=".go_to_authors">
+        <LinearLayout
+            android:id="@+id/buttonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/iris"
-            android:layout_width="239dp"
-            android:layout_height="71dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="34dp"
-            android:layout_marginEnd="130dp"
-            android:backgroundTint="@color/gray"
-            android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toTopOf="@+id/demi"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+    </ScrollView>
 
-        <Button
-            android:id="@+id/demi"
-            android:layout_width="239dp"
-            android:layout_height="71dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="130dp"
-            android:backgroundTint="@color/gray"
-            android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toTopOf="@+id/brit"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iris" />
-
-        <Button
-            android:id="@+id/brit"
-            android:layout_width="239dp"
-            android:layout_height="71dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="130dp"
-            android:backgroundTint="@color/gray"
-            android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toTopOf="@+id/kayata"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/demi" />
-
-        <Button
-            android:id="@+id/kayata"
-            android:layout_width="239dp"
-            android:layout_height="71dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="130dp"
-            android:backgroundTint="@color/gray"
-            android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/brit" />
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+</FrameLayout>

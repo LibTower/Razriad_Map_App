@@ -1,14 +1,24 @@
 <resources>
     <string name="app_name">Арт маркет Разряд!</string>
-    <string name="b_authors_text">Авторы</string>
-    <string name="b_map_text">Карта мероприятия</string>
-    <string name="my_image_description">Описание изображения</string>
-    <string name="Where_us">Нажми на меня, если не знаешь как дойти до лофта!</string>
-    <string name="quest">Квест</string>
-    <string name="fandoms">Фандомы</string>
 
-    <string name="iris">Iris</string>
-    <string name="demi">Demi</string>
-    <string name="brit">BRIT/0.5</string>
-    <string name="kayata">Каята!</string>
+    <string name="button_author">Авторы</string>
+    <string name="button_fandom">Фандомы</string>
+    <string name="button_where_map">Как добраться?</string>
+    <string name="button_loft_map">Карта мероприятия</string>
+    <string name="button_quest">Квест</string>
+
+    <string name="my_image_description">Описание изображения</string>
+
+    <string name="Where_us">Нажми на меня, если не знаешь как дойти до лофта!</string>
+
+    <string name="text_editor_authors">Введите ник нужного автора: </string>
+    <string name="text_editor_fandoms">Введите нужный фандом: </string>
+
+
+    <string name="button">кнопка</string>
+    <string name="image">картинка</string>
+    <string name="swich">переключатель</string>
+    <string name="table">стол</string>
+
+    <string name="image_logo">Логотип Разряда</string>
 </resources>
