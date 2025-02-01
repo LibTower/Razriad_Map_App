@@ -11,6 +11,7 @@ import androidx.appcompat.widget.SwitchCompat
 import com.example.razryadapi.Adapter_and_stuff.performClickAnimation
 import com.example.razryadapi.GoToAuthors
 import com.example.razryadapi.R
+import com.example.razryadapi.filter.Author
 import com.example.razryadapi.filter.authors
 
 class small_room : AppCompatActivity() {
@@ -78,43 +79,24 @@ class small_room : AppCompatActivity() {
     }
 
     private fun updateAllTableVisibilities() {
-        tables.forEach { table ->
-            table.visibility = View.INVISIBLE
-        }
+        // Получаем номера видимых столов
+        val visibleTableNumbers = Author.getVisibleTableNumbers(
+            authors,
+            if (swapS.isChecked) true else null,
+            if (comissionS.isChecked) true else null,
+            if (interactiveQuestS.isChecked) true else null,
+            if (moneyQuestS.isChecked) true else null
+        ).toSet() // Преобразуем в множество для быстрого поиска
 
-        authors.forEach { author ->
-            val tableIndex = author.tableNumber - 1
-
-            if (tableIndex in tables.indices) {
-                var allConditionsMet = true
-                var anyConditionActive = false
-
-                // Проверяем все переключатели и соответствие условий
-                if (swapS.isChecked) {
-                    anyConditionActive = true
-                    if (!author.swap) allConditionsMet = false
-                }
-                if (comissionS.isChecked) {
-                    anyConditionActive = true
-                    if (!author.commission) allConditionsMet = false
-                }
-                if (interactiveQuestS.isChecked) {
-                    anyConditionActive = true
-                    if (!author.interactiveQuest) allConditionsMet = false
-                }
-                if (moneyQuestS.isChecked) {
-                    anyConditionActive = true
-                    if (!author.moneyQuest) allConditionsMet = false
-                }
-
-                // Если все условия соблюдены, показываем стол
-                if (allConditionsMet) {
-                    tables[tableIndex].visibility = View.VISIBLE
-                    tables[tableIndex].alpha = 1.0f // Полная непрозрачность
-                } else if (anyConditionActive) {
-                    tables[tableIndex].visibility = View.VISIBLE
-                    tables[tableIndex].alpha = 0.5f // Полупрозрачная для несоответствующих условий
-                }
+        // Обновляем видимость и непрозрачность столов на основе множества
+        tables.forEachIndexed { index, table ->
+            val tableNumber = index + 1 // Номера столов начинаются с 1
+            if (visibleTableNumbers.contains(tableNumber)) {
+                table.visibility = View.VISIBLE
+                table.alpha = 1.0f // Полная непрозрачность для видимых столов
+            } else {
+                table.visibility = View.VISIBLE // Все столы будут видимы
+                table.alpha = 0.5f // Полупрозрачные для несоответствующих условий
             }
         }
     }

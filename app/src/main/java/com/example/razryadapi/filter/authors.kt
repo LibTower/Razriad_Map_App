@@ -57,7 +57,7 @@ val authors = listOf(
         Author("Pupok", 28, commission = false, swap = true, interactiveQuest = false, moneyQuest = true,(R.drawable.pupok), Pupok_fandoms, image_Pupok),
         Author("Shade GDI", 29, commission = false, swap = true, interactiveQuest = false, moneyQuest = true,(R.drawable.shade), Shade_fandoms, image_shade),
         Author("FREAKY-PINKY", 29, commission = true, swap = true, interactiveQuest = false, moneyQuest = true,(R.drawable.freaky), FREAKY_fandoms, images_FREAKY),
-        Author("Твое солнышко", 30, commission = false, swap = false, interactiveQuest = false, moneyQuest = true,(R.drawable.sunny), your_sunny_fandoms, image_your_sunny),
+        Author("Твое солнышко", 30, commission = true, swap = false, interactiveQuest = false, moneyQuest = true,(R.drawable.sunny), your_sunny_fandoms, image_your_sunny),
         Author("Vezar", 30, commission = false, swap = true, interactiveQuest = false, moneyQuest = true,(R.drawable.vezar), Vezar_fandoms, image_vezar),
         Author("ENIJOI", 31, commission = false, swap = true, interactiveQuest = false, moneyQuest = true,(R.drawable.enijoi), ENIJOI_fandoms, image_nocart),
         Author("Умио", 31, commission = false, swap = true, interactiveQuest = true, moneyQuest = true,(R.drawable.umio), Umio_fandoms, image_nocart),

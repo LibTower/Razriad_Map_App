@@ -23,15 +23,14 @@
         android:layout_width="306dp"
         android:layout_height="351dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="96dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="278dp"
+        android:layout_marginBottom="340dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.483"
         app:srcCompat="@drawable/small_room" />
 
     <ImageView
@@ -221,12 +220,13 @@
         android:layout_width="144dp"
         android:layout_height="53dp"
         android:layout_marginTop="70dp"
-        android:layout_marginBottom="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/comission_back"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/comission_back"
         app:layout_constraintTop_toBottomOf="@+id/comission_back"
+        app:layout_constraintVertical_bias="0.851"
         app:srcCompat="@drawable/iqquest" />
 
     <ImageView
@@ -247,7 +247,7 @@
         android:layout_width="144dp"
         android:layout_height="53dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toTopOf="@+id/moneyQues_back"
@@ -276,14 +276,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="96dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginBottom="5dp"
         android:contentDescription="@string/swich"
         app:layout_constraintBottom_toBottomOf="@+id/IneterQuest_back"
         app:layout_constraintEnd_toEndOf="@+id/IneterQuest_back"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/IneterQuest_back"
         app:layout_constraintTop_toTopOf="@+id/IneterQuest_back"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.5" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/swapS"
@@ -291,6 +291,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="96dp"
+        android:layout_marginBottom="5dp"
         android:contentDescription="@string/swich"
         app:layout_constraintBottom_toBottomOf="@+id/swap_back"
         app:layout_constraintEnd_toEndOf="@+id/swap_back"
@@ -303,13 +304,27 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="96dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginBottom="5dp"
         android:contentDescription="@string/swich"
         app:layout_constraintBottom_toBottomOf="@+id/moneyQues_back"
         app:layout_constraintEnd_toEndOf="@+id/moneyQues_back"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/moneyQues_back"
         app:layout_constraintTop_toTopOf="@+id/moneyQues_back"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="315dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/info2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

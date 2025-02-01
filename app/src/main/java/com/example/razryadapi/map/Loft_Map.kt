@@ -19,6 +19,10 @@ class Loft_Map : AppCompatActivity() {
     private lateinit var smallRoom: Button
     private lateinit var secondFloor: Button
     private lateinit var tables: List<ImageView>
+    private lateinit var swap: SwitchCompat
+    private lateinit var comission: SwitchCompat
+    private lateinit var interactiveQuest: SwitchCompat
+    private lateinit var moneyQuest: SwitchCompat
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +33,10 @@ class Loft_Map : AppCompatActivity() {
         bigRoom = findViewById(R.id.Big_room)
         smallRoom = findViewById(R.id.Small_room)
         secondFloor = findViewById(R.id.Second_floor)
+        swap = findViewById(R.id.swap)
+        comission = findViewById(R.id.comission)
+        interactiveQuest = findViewById(R.id.interactiveQuest)
+        moneyQuest = findViewById(R.id.moneyQuest)
 
         // Инициализация списка изображений столов
         tables = listOf(
@@ -81,19 +89,19 @@ class Loft_Map : AppCompatActivity() {
             }
         }
 
-        findViewById<SwitchCompat>(R.id.swap).setOnCheckedChangeListener { _, _ ->
+        swap.setOnCheckedChangeListener { _, _ ->
             updateAllTableVisibilities()
         }
 
-        findViewById<SwitchCompat>(R.id.comission).setOnCheckedChangeListener { _, _ ->
+        comission.setOnCheckedChangeListener { _, _ ->
             updateAllTableVisibilities()
         }
 
-        findViewById<SwitchCompat>(R.id.interactiveQuest).setOnCheckedChangeListener { _, _ ->
+        interactiveQuest.setOnCheckedChangeListener { _, _ ->
             updateAllTableVisibilities()
         }
 
-        findViewById<SwitchCompat>(R.id.moneyQuest).setOnCheckedChangeListener { _, _ ->
+        moneyQuest.setOnCheckedChangeListener { _, _ ->
             updateAllTableVisibilities()
         }
         smallRoom.setOnClickListener {
@@ -148,39 +156,26 @@ class Loft_Map : AppCompatActivity() {
             table.visibility = View.INVISIBLE // Сначала скрываем все столы
         }
 
-        authors.forEach { author ->
-            val tableIndex = author.tableNumber - 1
-            if (tableIndex in tables.indices) {
-                var allConditionsMet = true
-                var anyConditionActive = false
+                val visibleTableNumbers = Author.getVisibleTableNumbers(
+                    authors,
+                    if (swap.isChecked) true else null,
+                    if (comission.isChecked) true else null,
+                    if (interactiveQuest.isChecked) true else null,
+                    if (moneyQuest.isChecked) true else null
+                ).toSet() // Преобразуем в множество для быстрого поиска
 
-                // Проверяем все переключатели и соответствие условий
-                if (findViewById<SwitchCompat>(R.id.swap).isChecked) {
-                    anyConditionActive = true
-                    if (!author.swap) allConditionsMet = false
-                }
-                if (findViewById<SwitchCompat>(R.id.comission).isChecked) {
-                    anyConditionActive = true
-                    if (!author.commission) allConditionsMet = false
-                }
-                if (findViewById<SwitchCompat>(R.id.interactiveQuest).isChecked) {
-                    anyConditionActive = true
-                    if (!author.interactiveQuest) allConditionsMet = false
-                }
-                if (findViewById<SwitchCompat>(R.id.moneyQuest).isChecked) {
-                    anyConditionActive = true
-                    if (!author.moneyQuest) allConditionsMet = false
+                // Обновляем видимость и непрозрачность столов на основе множества
+                tables.forEachIndexed { index, table ->
+                    val tableNumber = index + 1 // Номера столов начинаются с 1
+                    if (visibleTableNumbers.contains(tableNumber)) {
+                        table.visibility = View.VISIBLE
+                        table.alpha = 1.0f // Полная непрозрачность для видимых столов
+                    } else {
+                        table.visibility = View.VISIBLE // Все столы будут видимы
+                        table.alpha = 0.5f // Полупрозрачные для несоответствующих условий
+                    }
                 }
 
-                // Если все условия соблюдены, показываем стол
-                if (allConditionsMet) {
-                    tables[tableIndex].visibility = View.VISIBLE
-                    tables[tableIndex].alpha = 1.0f // Полная непрозрачность
-                } else if (anyConditionActive) {
-                    tables[tableIndex].visibility = View.VISIBLE
-                    tables[tableIndex].alpha = 0.5f // Полупрозрачная для несоответствующих условий
-                }
-            }
-        }
     }
 }
+

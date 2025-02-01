@@ -32,14 +32,14 @@
         android:layout_width="310dp"
         android:layout_height="67dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="51dp"
         android:layout_marginBottom="264dp"
         app:layout_constraintBottom_toTopOf="@+id/author_pager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/c3rb3ru2" />
+        app:srcCompat="@drawable/korobka_krodetsya" />
 
 
     <ImageView
